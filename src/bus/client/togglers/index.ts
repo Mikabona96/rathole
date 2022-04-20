@@ -24,6 +24,7 @@ export const toggrersSlice = createSlice({
             [ action.payload.type ]: action.payload.value,
         }),
         resetTogglersToInitialAction: () => initialState,
+
     },
 });
 

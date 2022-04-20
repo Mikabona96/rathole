@@ -4,12 +4,11 @@ import styled from 'styled-components';
 export const Container = styled.section`
     display: flex;
     justify-content: start;
-    padding: 10rem 15rem;
+    padding: 5% 10%;
     height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 13%, rgba(17,15,15,1) 23%, rgba(17,18,18,1) 35%, rgba(23,24,24,1) 50%);
+    background: url('https://brokenpanda.net/wp-content/uploads/1589444786_85_Red-Minimalist-Wallpapers-2020.jpg');
+    background-size: cover;
 `;
-
 export const FormWrapper = styled.div`
     display: flex;
     width: 20rem;
