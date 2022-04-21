@@ -1,6 +1,6 @@
 // Core
-import React, { FC, ReactHTMLElement } from 'react';
-
+import React, { FC } from 'react';
+import { useMessages } from '../../../bus/messages';
 // Components
 import { ErrorBoundary } from '../../components';
 
@@ -19,17 +19,10 @@ const MessageComponent = () => {
         </div>
     );
 };
-type initialObj = {
-    createdAt: string,
-    text:      string,
-    _id:       string,
-    username:  string,
-    updatedAt: string,
-};
 
 
 const Main: FC = () => {
-    const message = fetch('https://api.barbarossa.pp.ua/messages');
+    const { messages } = useMessages();
 
     return (
         <S.Container>
